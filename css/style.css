@@ -6,3 +6,72 @@
 .navbar-main {
     background: #000;
 }
+
+
+/* cardlist */
+img.cardlist-item-thumb {
+    position: absolute;
+    background: #fff2c9;
+    border-radius: 50%;
+    border: 2px solid #000;
+    height: 60px;
+}
+
+.cardlist-item-header h1 {
+    padding-left: 72px;
+    font-size: 20pt;
+    padding-top: 12px;
+    text-transform: capitalize;
+}
+
+.cardlist-item-mainart {
+    height: 200px;
+}
+
+.cardlist-item-mainart {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cardlist-item {
+    padding: 10px;
+    background: #c7c7c7;
+    border-radius: 9px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.cardlist-item:hover .cardlist-item-mainart{
+    animation-name: animate;
+    animation-duration: 1s;
+}
+
+@keyframes animate {
+    0%   {background-size: auto 100%;}
+    25%  {background-size: auto 130%;}
+    50%  {background-size: auto 85%;}
+    100% {background-size: auto 100%;}
+  }
+
+
+div#modalType span {
+    background: #1c78db;
+    color: #fff;
+    padding: 5px;
+    border-radius: 9px;
+    margin-right: 3px;
+}
+
+div#modalAbility span {
+    background: #464643;
+    color: #fff;
+    padding: 5px;
+    border-radius: 9px;
+    margin-right: 3px;
+}
+
+.modal-sprite-item {
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
