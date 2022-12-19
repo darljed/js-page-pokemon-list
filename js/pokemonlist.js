@@ -11,7 +11,7 @@ class PokemonList{
     getData(){
         const self=this;
         $.get("https://pokeapi.co/api/v2/pokemon?offset=30&limit=30", function(data, status){
-            console.log(data);
+            // console.log(data);
             this.results = data.results;
             this.next = data.next;
             this.prev = data.previous;
@@ -23,7 +23,7 @@ class PokemonList{
     getInfo(url,callback){
             const self=this;
             $.get(url, function(data, status){
-                console.log(data);
+                // console.log(data);
                 callback(data)
                 $("#pokemonModal").modal("show")
                 // this.current = data
@@ -65,7 +65,7 @@ class PokemonList{
             sprite: "modalSprite"
         }
         const self = this
-        console.log(data.sprites.other['official-artwork'].front_default)
+        // console.log(data.sprites.other['official-artwork'].front_default)
         // name
         $("#"+modalID.label).text(data.name)
 
